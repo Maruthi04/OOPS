@@ -1,25 +1,18 @@
-import java.util.*;
-class st{
-	int a=4;
-	static int c=6;
-	void metod() {
-		System.out.println("hello");
+// Extend BoxWeight to include shipping costs.
+// Start with Box.
+class Box {
+	static void func() {
+		System.out.println("i am normal version");
 	}
-	static int mine() {
-		st s=new st();
-		s.metod();
-		return 1;
+	static void func(int n) {
+		System.out.println("i am the hybrid version "+n);
 	}
-}
-class temp{
-	
-	public static void main(String args[]) {
-		int i=0;
-		
-		char c=65;
-		System.out.printf("%c\n",c);
-		st.mine();
-		
-}
 }
 
+
+class temp {
+	public static void main(String args[]) {
+		Box.func();
+		Box.func(4);
+	}
+}
